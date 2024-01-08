@@ -1,0 +1,123 @@
+:root {
+  --orange-white-color: #f9ebe5;
+  --blue-white-color: #e2ecf3;
+  --dark-text-color: #282b2d;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: CarterOne;
+  src: url("../fonts/CarterOne-Regular.ttf");
+}
+
+.labText {
+  position: fixed;
+  z-index: 2;
+  color: transparent;
+  -webkit-text-stroke: var(--dark-text-color) 4px;
+  font-size: 10rem !important;
+  font-family: CarterOne;
+  top: 27%;
+}
+
+.artGalleryHeading {
+  margin-top: 150px;
+}
+
+/* ////////////////////////////////////////////// */
+#preLoader {
+  background-color: var(--blue-white-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  height: 100vh;
+  width: 100% !important;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingImg {
+  max-width: 150px;
+  background-position: center;
+  -webkit-animation: breath 2s linear infinite;
+  -moz-animation: breath 2s linear infinite;
+  -o-animation: breath 2s linear infinite;
+  animation: breath 2s linear infinite;
+}
+
+@keyframes breath {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scroll-downs {
+  position: fixed;
+  top: 70%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  /* z-index: 1; */
+  width: 24px;
+  height: 45px;
+  opacity: 0.5;
+}
+.mousey {
+  width: 3px;
+  padding: 8px 10px;
+  height: 25px;
+  border: 2px solid var(--dark-text-color);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--dark-text-color);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
