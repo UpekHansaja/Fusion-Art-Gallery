@@ -30,8 +30,12 @@
         require "./assets/components/entranceCanvas.php";
         ?>
 
-        <div class="col-12 py-5 bg-warning" style="z-index: 1;">
-            <!-- Content goes here  -->
+        <div class="col-12" style="z-index: 2;">
+            <div class="row">
+                <?php
+                require "./assets/components/home.php";
+                ?>
+            </div>
         </div>
 
     </div>

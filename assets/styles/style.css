@@ -2,12 +2,29 @@
   --orange-white-color: #f9ebe5;
   --blue-white-color: #e2ecf3;
   --dark-text-color: #282b2d;
+  --white-color: #ffffff;
+}
+
+@font-face {
+  font-family: CarterOne;
+  src: url("../fonts/CarterOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url("../fonts/Montserrat/Montserrat-Thin.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .noPadding {
@@ -20,11 +37,6 @@ canvas {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
-}
-
-@font-face {
-  font-family: CarterOne;
-  src: url("../fonts/CarterOne-Regular.ttf");
 }
 
 .labText {
@@ -84,7 +96,7 @@ canvas {
   bottom: 0;
   left: 0;
   margin: auto;
-  /* z-index: 1; */
+  z-index: 10;
   width: 24px;
   height: 45px;
   opacity: 0.5;
@@ -93,7 +105,7 @@ canvas {
   width: 3px;
   padding: 8px 10px;
   height: 25px;
-  border: 2px solid var(--dark-text-color);
+  border: 2px solid var(--blue-white-color);
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
@@ -102,7 +114,7 @@ canvas {
   width: 3px;
   height: 10px;
   border-radius: 25%;
-  background-color: var(--dark-text-color);
+  background-color: var(--blue-white-color);
   animation-name: scroll;
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
@@ -120,4 +132,141 @@ canvas {
     transform: translateY(15px);
     opacity: 0;
   }
+}
+
+.logoText {
+  font-size: 80px;
+  font-family: CarterOne;
+  color: var(--dark-text-color);
+  list-style: none;
+}
+
+.logoImg {
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.navigation-section {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-bottom: solid 1px var(--dark-text-color);
+}
+
+.menu-nav-section {
+  /* height: 100vh; */
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-bottom: solid 1px var(--dark-text-color);
+}
+
+.hover-white-color {
+  transition-duration: 0.5s !important;
+  font-family: Montserrat-Thin;
+}
+
+.hover-white-color:hover {
+  position: relative;
+  margin-left: 20px;
+  font-family: Montserrat-Regular;
+  cursor: pointer;
+  color: var(--white-color) !important;
+  transition-duration: 0.5s !important;
+}
+
+.hover-black-color {
+  transition-duration: 0.5s !important;
+  font-family: Montserrat-Thin;
+}
+
+.hover-black-color:hover {
+  position: relative;
+  margin-left: 20px;
+  font-family: Montserrat-Regular;
+  cursor: pointer;
+  color: var(--dark-text-color) !important;
+  transition-duration: 0.5s !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.hero-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-content h1 {
+  font-family: Montserrat-Regular;
+  font-size: 2rem;
+  color: var(--dark-text-color);
+}
+
+.menu-check {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.menu-check:hover {
+  cursor: pointer;
+}
+
+.menu-check span {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-check:hover span:nth-child(1) {
+  transform: translateX(-5px);
+}
+
+.menu-check:hover span:nth-child(2) {
+  transform: translateX(5px);
+}
+
+.menu-check:hover span:nth-child(3) {
+  transform: translateX(-5px);
+}
+
+.cross-menu {
+  /* position: relative; */
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.offcanvas-title {
+  font-family: CarterOne;
+  font-size: 2.5rem;
+  color: var(--dark-text-color);
+}
+
+.menu-logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.offcanvas{
+    height: 100vh !important;
 }

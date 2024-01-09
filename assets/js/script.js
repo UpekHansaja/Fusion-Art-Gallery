@@ -46,8 +46,8 @@ gsap.fromTo(
     scrollTrigger: {
       scrub: 1,
 
-      start: "75%",
-      end: "85%",
+      start: "65%",
+      end: "80%",
     },
     onComplete: () => {
       gsap.to(".labText", { opacity: 0 });
@@ -63,4 +63,17 @@ function render() {
 
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(images[ball.frame], 0, 0);
+}
+
+function toggleMenu() {
+  var menuCheck = document.getElementById("menu-check");
+
+  if (menuCheck.checked == true) {
+    // alert("checked");
+    var menuToggle = document.querySelector(".menu-line3");
+    menuToggle.classList.add("cross-menu");
+  } else {
+    var menuToggle = document.querySelector(".menu-line3");
+    menuToggle.classList.remove("cross-menu");
+  }
 }
