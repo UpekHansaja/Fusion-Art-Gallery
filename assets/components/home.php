@@ -92,7 +92,7 @@
                             <h6 class="next-page-text">Let's Explore more about our 3D Model -</h6>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 text-center">
-                            <a href="./assets/views/model-design.php" class="btn next-page-text next-page-btn py-2 px-4">Model Design&nbsp;&nbsp;<i class="bi bi-link-45deg"></i></a>
+                            <a href="./model-design.php" class="btn next-page-text next-page-btn py-2 px-4">Model Design&nbsp;&nbsp;<i class="bi bi-link-45deg"></i></a>
                         </div>
                     </div>
                 </div>
