@@ -131,10 +131,10 @@
                         </div>
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-8 text-center pt-2">
-                                <h6 class="next-page-text">Looking for any Resource?. -</h6>
+                                <h6 class="next-page-text">Want to Explore again? -</h6>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 text-center">
-                                <a href="./resource.php" class="btn next-page-text next-page-btn py-2 px-4">Resources&nbsp;&nbsp;<i class="bi bi-link-45deg"></i></a>
+                                <a href="./index.php" class="btn next-page-text next-page-btn py-2 px-4">Home&nbsp;&nbsp;<i class="bi bi-link-45deg"></i></a>
                             </div>
                         </div>
                     </div>
