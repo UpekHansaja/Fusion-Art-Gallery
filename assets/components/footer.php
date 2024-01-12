@@ -7,10 +7,10 @@
             </div>
             <div class="col-12 col-md-12 col-lg-4 footer-links pt-2 pt-lg-5">
                 <ul class="footer-link-text">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resource</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="team.php">Team</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="resource.php">Resource</a></li>
                 </ul>
             </div>
             <br>
