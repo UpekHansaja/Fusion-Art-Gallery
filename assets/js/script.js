@@ -77,3 +77,18 @@ function toggleMenu() {
     menuToggle.classList.remove("cross-menu");
   }
 }
+
+
+function download500px() {
+  const link = document.createElement('a');
+  link.href = './assets/downloads/logo-500.png';
+  link.download = 'logo-500.png';
+  link.click();
+}
+
+function download8000px() {
+  const link = document.createElement('a');
+  link.href = './assets/downloads/logo.png';
+  link.download = 'logo.png';
+  link.click();
+}
