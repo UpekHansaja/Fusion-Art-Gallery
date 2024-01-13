@@ -2,7 +2,7 @@
     <div class="col-12 pt-2 pt-md-3 pt-lg-5">
         <div class="row pt-2 pt-md-3 pt-lg-4">
             <div class="col-12 col-md-12 col-lg-4 footer-logo pt-2 pt-lg-2">
-                <img src="./assets/images/logos/logo-500.png" alt="Fusion Art Gallery Logo" class="footer-logoImg mt-2">
+                <img src="./assets/images/logos/logo-500.png" alt="Fusion Art Gallery Logo" class="footer-logoImg mt-2 link-dark" onclick="window.location='index.php';">
                 <h2 class="fs-2 mt-2">Fusion Art Gallery</h2>
             </div>
             <div class="col-12 col-md-12 col-lg-4 footer-links pt-2 pt-lg-5">
